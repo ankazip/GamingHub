@@ -1,0 +1,310 @@
+/* General styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Background image for the entire page */
+body {
+  background: url('background3.png') no-repeat center center/cover;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+}
+
+/* Rest of your styles remain unchanged */
+
+  
+  /* Navbar styles */
+  .navbar {
+    background: #333;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+  
+  .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1500px;
+    padding: 0 50px;
+  }
+  
+  #navbar__logo {
+    color: #fff;
+    justify-self: start;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .navbar__item {
+    height: 80px;
+  }
+  
+  .navbar__links {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 22px;
+    color: #fff;
+    background: #C6FFDD;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+  }
+  
+  .navbar__btn a {
+    text-decoration: none;
+    color: #131103;
+  }
+  
+  .navbar__btn:hover {
+    background: #fff;
+    color: #333;
+  }
+  
+  /* Hero section */
+  .hero {
+    background: url('https://source.unsplash.com/1600x900/?gaming') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffbb00;
+  }
+  
+  .hero__container {
+    max-width: 1200px;
+  }
+  
+  .hero__heading {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero__heading span {
+    color: #d4e306;
+  }
+  
+  .hero__description {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .main__btn a {
+    text-decoration: none;
+    color: #333;
+    background: #C6FFDD;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+  }
+  
+  .main__btn a:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Main content section */
+  .main__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .main__img--container {
+    flex-basis: 50%;
+  }
+  
+  .main__img--card {
+    background-color: #333;
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .main__img--card i {
+    color: #e38b06;
+    font-size: 3rem;
+  }
+  
+  .main__content {
+    flex-basis: 50%;
+    padding: 0 20px;
+  }
+  
+  .main__content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .main__content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .main__content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Services section */
+  .services {
+    background-color: transparent;
+    padding: 50px 0;
+  }
+  
+  .services h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    border: 1px #333;
+  }
+  
+  .services__wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .services__card {
+    background-color: #e9650d;
+    border: 1px solid #e9650d;
+    padding: 20px;
+    width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .services__card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .services__card p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .services__btn button {
+    background-color: #e38b06;
+    color: #e5e90d;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+  
+  .services__btn button:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Footer section */
+  .footer__container {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+  }
+  
+  .footer__links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .footer__link--wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer__link--items {
+    margin-bottom: 20px;
+  }
+  
+  .footer__link--items h2 {
+    margin-bottom: 16px;
+  }
+  
+  .footer__link--items a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  .footer__link--items a:hover {
+    color: #e38b06;
+  }
+  
+  .social__media {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .social__media--wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer__logo {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  .social__icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: all 0.3s ease-out;
+  }
+  
+  .social__icons a:hover {
+    color: #e38b06;
+  }
+  
+  .website__rights {
+    margin-top: 20px;
+  }
+  
